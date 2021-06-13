@@ -1,25 +1,18 @@
-drop table vaccinations;
+drop table vacc_mobility_2021;
 
-CREATE TABLE vaccinations (
-date date,
+CREATE TABLE vacc_mobility_2021 (
 state TEXT,
-people_vaccinated INT,
-people_fully_vaccinated INT
+"date" date,
+people_vaccinated FLOAT,
+people_fully_vaccinated FLOAT,
+retail_and_rec_percent_change FLOAT,
+grocery_and_pharmacy_percent_change FLOAT,
+parks_percent_change FLOAT,
+transit_stations_percent_change FLOAT,
+workplace_percent_change FLOAT,
+residential_percent_change FLOAT
 );
 
-select * from vaccinations;
+select * from vacc_mobility_2021;
 
-drop table us_mobility_2021;
 
-CREATE TABLE us_mobility_2021 (
-    date date,
-    state TEXT,
-    retail_and_rec_percent_change INT,
-    grocery_and_pharmacy_percent_change INT,
-    parks_percent_change INT,
-    transit_stations_percent_change INT,
-    workplace_percent_change INT,
-    residential_percent_change INT
-);
-
-select * from us_mobility_2021;
